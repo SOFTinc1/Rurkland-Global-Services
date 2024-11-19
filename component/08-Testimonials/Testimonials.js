@@ -3,7 +3,7 @@ import styles from './Testimonials.module.css';
 import Image from "next/image";
 
 import Lola from "../../public/static/lola.png";
-import Straight from "../../public/icon/Straight.svg";
+import Straight from "../../public/icon/straight.svg";
 
 const Testimonials = () => {
   // State to keep track of the current slide index
