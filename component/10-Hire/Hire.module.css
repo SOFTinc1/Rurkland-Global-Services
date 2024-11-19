@@ -1,0 +1,138 @@
+.container {
+  padding: 80px 200px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partners_par {
+  background: #E7DCFD;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #0F23A9;
+  width: fit-content;
+}
+.banner_h4 {
+  margin: 16px 0 0 0;
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.banner_P {
+  font-size: 14px;
+  color: #7A7A7A;
+  text-align: center;
+  margin: 19px 0 48px 0;
+  line-height: 24px;
+}
+.button_div {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.hire_img {
+  width: 100%;
+  height: auto;
+  margin-top: 48px;
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .container {
+    margin-top: -40px;
+  }
+  .borderDiv {
+    display: none;
+  }
+  .topBottom {
+    grid-template-columns: 1fr 1.3fr;
+  }
+  .containerInner {
+    grid-template-columns: 1fr 1.8fr;
+    gap: 20px;
+  }
+  .containerInnerLeft {
+  }
+  .faqCardDiv {
+    /* height: 400px; */
+    overflow-y: hidden;
+  }
+  .faqCardDivScroll {
+    height: 100%;
+    padding: 20px 0;
+    overflow-y: scroll;
+  }
+}
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .container {
+    margin-top: -60px;
+  }
+  .borderDiv {
+    display: none;
+  }
+  .topBottom {
+    display: block;
+  }
+  .containerInner {
+    display: block;
+    padding: 10px;
+  }
+  .containerInnerLeft {
+    height: fit-content;
+  }
+  .faqCardDiv {
+    /* height: 400px; */
+    overflow-y: hidden;
+  }
+  .faqCardDivScroll {
+    height: 100%;
+    padding: 20px 0;
+    overflow-y: scroll;
+  }
+  .faqCardDiv {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+  }
+  .topUpper {
+    display: block;
+  }
+  .topBottom {
+    display: block;
+    margin: 40px 0;
+  }
+  .borderDiv {
+    display: none;
+  }
+  .topBottom {
+    display: block;
+  }
+  .containerInner {
+    display: block;
+    padding: 10px;
+  }
+  .containerInnerLeft {
+    height: fit-content;
+  }
+  .buttonDiv {
+    display: block;
+  }
+  .buttonDiv2 {
+    margin-top: 20px;
+    width: fit-content;
+  }
+  .faqCardDiv {
+    margin-top: 40px;
+  }
+  .faqCard {
+    width: 100%;
+  }
+  .title {
+    font-size: 16px;
+  }
+}

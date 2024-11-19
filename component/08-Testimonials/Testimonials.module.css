@@ -1,0 +1,76 @@
+.carouselContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 100px;
+}
+.carouselContainerInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+}
+.partners_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.partners_par {
+  background: #D1FADF;
+  padding: 8px 16px;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #126A11;
+}
+.banner_h4 {
+  margin: 16px 0 48px 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+.carouselItem {
+  display: flex;
+  flex-direction: column; /* Ensure the title is on top and the image below */
+  align-items: center;
+  margin: 20px;
+  text-align: center;
+}
+.imageWrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+.imageText {
+  font-size: 22px;
+  font-weight: 400 !important;
+  color: #333;
+  line-height: 36px;
+}
+.carouselImage {
+  width: 80px;
+  height: 80px;
+  margin-top: 68px;
+}
+.imageText2 {
+  margin-top: 10px; 
+  font-size: 22px;
+  color: #333;
+  line-height: 36px;
+}
+.navButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+}
+.arrow_img {
+  width: 40px; /* Adjust the size of the arrow */
+  height: 40px;
+}
