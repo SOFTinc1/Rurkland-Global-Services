@@ -3,8 +3,9 @@
   cursor: pointer;
   border-radius: 50px;
   border: none;
+  outline: none;
   color: #000;
-  font-size: 12px;
+  font-size: 14px;
   text-transform: capitalize;
   font-family: sfpro-medium;
 }

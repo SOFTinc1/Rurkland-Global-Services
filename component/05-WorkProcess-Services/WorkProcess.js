@@ -19,17 +19,17 @@ const WorkProcessServices = () => {
 
         <div className={styles.card}>
           <Image src={Headphone} alt="" className={styles.project_img} />
-          <h1 className={styles.wedo_h1}>Receive and Evaluate the Project Overview</h1>
+          <h1 className={styles.wedo_h1}>Support 24/7</h1>
         </div>
 
         <div className={styles.card}>
           <Image src={Screw} alt="" className={styles.project_img} />
-          <h1 className={styles.wedo_h1}>Research and Detailed Planning</h1> 
+          <h1 className={styles.wedo_h1}>Maintenance</h1> 
         </div>
 
         <div className={styles.card}>
           <Image src={Purse} alt="" className={styles.project_img} />
-          <h1 className={styles.wedo_h1}>Research and Detailed Planning</h1> 
+          <h1 className={styles.wedo_h1}>Full Services</h1> 
         </div>
 
       </div>

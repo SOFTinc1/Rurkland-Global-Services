@@ -13,7 +13,7 @@ const Partners = () => {
   return (
     <div className={styles.container}>
 
-      <div className={styles.partners_header}>
+      <div id="partner" className={styles.partners_header}>
         <p className={styles.partners_par}>PEOPLE IN BUSINESS WITH US</p>
         <h4 className={styles.banner_h4}>Trusted Partners</h4>
       </div>

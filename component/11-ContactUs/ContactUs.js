@@ -7,7 +7,7 @@ class ContactUs extends Component {
   render() {
 
     return (
-      <div className={styles.container}>
+      <div id="contact" className={styles.container}>
         <div className={styles.container_inner}>
         <div className={styles.div_one}>
           <p className={styles.partners_par}>QUESTIONS FROM YOU TO US</p>

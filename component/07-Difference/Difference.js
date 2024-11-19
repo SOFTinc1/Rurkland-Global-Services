@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./Difference.module.css";
 
 import VerifyImg from "../../public/icon/verify.svg";
@@ -14,7 +15,9 @@ const Difference = () => {
       </div>
 
       <div className={styles.container_lower}>
-        <p className={styles.difference_par2}>View Services</p>
+        <Link href="#partner">
+          <p className={styles.difference_par2}>View Services</p>
+        </Link>
         <div className={styles.highlight}>
           <Image src={VerifyImg} className={styles.highlight_icon} />
           <h4 className={styles.banner_h2}>Flexible Solution</h4>

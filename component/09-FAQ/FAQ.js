@@ -14,7 +14,7 @@ const FAQ = () => {
         <div className={styles.faqCardDivScroll}>
           <details className={styles.faqCard}>
             <summary className={`${styles.title} ${styles.noMarker}`}>
-              <span className={styles.icon}>+</span> What is Unlimited Cope Foundation?
+               What is Unlimited Cope Foundation?
             </summary>
             <p className={styles.FaqDetails}>
               UCF stands as a bridge between real life and the world of
@@ -27,7 +27,7 @@ const FAQ = () => {
 
           <details className={styles.faqCard}>
             <summary className={`${styles.title} ${styles.noMarker}`}>
-              <span className={styles.icon}>+</span> Why the name Unlimited Cope Foundation?
+               Why the name Unlimited Cope Foundation?
             </summary>
             <p className={styles.FaqDetails}>
               In mid-2021, Unlimited Cope launched on the Solana blockchain,
@@ -39,7 +39,7 @@ const FAQ = () => {
 
           <details className={styles.faqCard}>
             <summary className={`${styles.title} ${styles.noMarker}`}>
-              <span className={styles.icon}>+</span> What is our mission?
+               What is our mission?
             </summary>
             <p className={styles.FaqDetails}>
               Our mission is clear: we are dedicated to empowering countless
@@ -56,7 +56,7 @@ const FAQ = () => {
 
           <details className={styles.faqCard}>
             <summary className={`${styles.title} ${styles.noMarker}`}>
-              <span className={styles.icon}>+</span> What is COPE DAO?
+               What is COPE DAO?
             </summary>
             <p className={styles.FaqDetails}>
               The era of “memecoins” on Solana in 2021 birthed COPE,
@@ -70,7 +70,7 @@ const FAQ = () => {
 
           <details className={styles.faqCard}>
             <summary className={`${styles.title} ${styles.noMarker}`}>
-              <span className={styles.icon}>+</span> COPE Psychology
+               COPE Psychology
             </summary>
             <p className={styles.FaqDetails}>
               Learning is paramount to onboarding online communities to web3

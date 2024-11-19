@@ -11,6 +11,10 @@
   src: url("../../public/font/SF-Pro-Display-Regular.otf");
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff !important;
 }

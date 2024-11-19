@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./WhatWeDo.js.module.css";
+import Link from "next/link";
 
 import OilAndGas from "../../public/icon/oilandgas.svg";
 import Refining from "../../public/icon/refining.svg";
@@ -8,7 +9,6 @@ import Truck from "../../public/icon/truck.svg";
 import Spiral from "../../public/icon/spiral.svg";
 import Button from "../Button/Button";
 
-// import Button from "../Button/Button";
 
 const WhatWeDo = () => {
   return (
@@ -40,8 +40,9 @@ const WhatWeDo = () => {
         </div>
 
       </div>
-
+      <Link href='/services'>
       <Button border="1px solid #4158EE" backgroundColor="transparent" padding="12px 50px">View More</Button>
+      </Link>
     </div>
   );
 };

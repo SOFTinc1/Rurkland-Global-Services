@@ -1,6 +1,7 @@
 import Footer from "../../component/Footer/Footer";
 import Header from "../../component/Header/header";
 import ScrollToTop from "../../component/ScrollToTop/ScrollToTop";
+
 import "./globals.css";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
       <body>
         <Header />
         <ScrollToTop />
-        {children}
+          {children}
         <Footer />
       </body>
     </html>

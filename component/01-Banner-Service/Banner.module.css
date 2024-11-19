@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* padding-top: 200px; */
 }
 .banner_par {
   font-size: 18px;

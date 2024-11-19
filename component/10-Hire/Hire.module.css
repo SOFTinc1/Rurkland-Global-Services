@@ -7,12 +7,12 @@
   align-items: center;
 }
 .partners_par {
-  background: #E7DCFD;
+  background: #FCEA88;
   padding: 8px 16px;
   border-radius: 24px;
   font-size: 14px;
   font-weight: 800;
-  color: #0F23A9;
+  color: #826E00;
   width: fit-content;
 }
 .banner_h4 {
@@ -22,16 +22,11 @@
   text-align: center;
 }
 .banner_P {
-  font-size: 14px;
+  font-size: 16px;
   color: #7A7A7A;
   text-align: center;
   margin: 19px 0 48px 0;
   line-height: 24px;
-}
-.button_div {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
 }
 .hire_img {
   width: 100%;
