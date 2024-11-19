@@ -19,6 +19,7 @@
   border-radius: 24px;
   width: fit-content;
   color: #126A11 !important;
+  text-align: center;
 }
 .banner_h4 {
   font-weight: 500;
@@ -28,6 +29,7 @@
 .partners_p {
   font-size: 14px;
   margin: 16px 0 48px 0;
+  text-align: center;
 }
 .col2 {
   display: grid;
@@ -48,19 +50,34 @@
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
-  .divider_hr {
-    width: 300px;
+  .container {
+    padding: 80px;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
-  .divider_hr {
-    width: 300px;
+  .container {
+    padding: 80px;
+  }
+  .col2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .container_inner {
-    padding: 120px 20px;
+  .container {
+    padding: 80px 20px;
+  }
+  .col2 {
+    display: block;
+  }
+  .partners_p {
+    font-size: 14px;
+    margin: 16px 0 0 0;
+    text-align: center;
+  }
+  .card {
+    margin-top: 40px;
   }
 }

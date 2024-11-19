@@ -1,70 +1,6 @@
-/* .carouselContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  max-width: 900px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.carousel {
-  display: flex;
-  overflow: hidden;
-  width: 100%;
-  padding: 20px 0;
-}
-
-.carouselItem {
-  flex: 1 1 33.33%;
-  max-width: 33.33%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #e6e6e6;
-  border-radius: 8px;
-  background-color: #fafafa;
-  color: #333;
-  font-size: 2em;
-  padding: 20px;
-  margin: 0 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  width: 100px;
-  margin-top: 20px;
-}
-
-.navButton {
-  background-color: #f0f0f0;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.5em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.navButton:hover {
-  background-color: #ccc;
-} */
-
 .carouselContainer {
   padding: 80px 100px;
   background-color: #FFDD00;
-}
-.carouselContainerInner {
-  display: flex;
-  align-items: center;
 }
 .partners_header {
   display: flex;
@@ -84,6 +20,11 @@
   margin: 16px 0 48px 0;
   font-size: 40px;
   font-weight: 500;
+  text-align: center;
+}
+.carouselContainerInner {
+  display: block;
+  align-items: center;
 }
 .carousel {
   display: flex;
@@ -122,12 +63,16 @@
 .carouselItem:hover .imageOverlay {
   opacity: 1;
 }
+.navButtonDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
 .navButton {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 2.5rem;
-  color: #333;
   padding: 10px; 
   display: flex;
   align-items: center;
@@ -143,4 +88,36 @@
 }
 .navButtonRight {
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .carouselContainer {
+    padding: 80px;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .carouselContainer {
+    padding: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 80px 20px;
+  }
+  .carouselContainer {
+    padding: 80px 20px;
+    background-color: #FFDD00;
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .carouselItem {
+    flex: 0 0 100%; /* Take full width for a single image */
+    max-width: 100%;
+  }
 }

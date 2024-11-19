@@ -41,98 +41,16 @@
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .container {
-    margin-top: -40px;
-  }
-  .borderDiv {
-    display: none;
-  }
-  .topBottom {
-    grid-template-columns: 1fr 1.3fr;
-  }
-  .containerInner {
-    grid-template-columns: 1fr 1.8fr;
-    gap: 20px;
-  }
-  .containerInnerLeft {
-  }
-  .faqCardDiv {
-    /* height: 400px; */
-    overflow-y: hidden;
-  }
-  .faqCardDivScroll {
-    height: 100%;
-    padding: 20px 0;
-    overflow-y: scroll;
+    padding: 40px 80px;
   }
 }
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .container {
-    margin-top: -60px;
-  }
-  .borderDiv {
-    display: none;
-  }
-  .topBottom {
-    display: block;
-  }
-  .containerInner {
-    display: block;
-    padding: 10px;
-  }
-  .containerInnerLeft {
-    height: fit-content;
-  }
-  .faqCardDiv {
-    /* height: 400px; */
-    overflow-y: hidden;
-  }
-  .faqCardDivScroll {
-    height: 100%;
-    padding: 20px 0;
-    overflow-y: scroll;
-  }
-  .faqCardDiv {
-    margin-top: 60px;
+    padding: 40px 80px;
   }
 }
 @media screen and (max-width: 600px) {
   .container {
-    padding: 40px 20px;
-  }
-  .topUpper {
-    display: block;
-  }
-  .topBottom {
-    display: block;
-    margin: 40px 0;
-  }
-  .borderDiv {
-    display: none;
-  }
-  .topBottom {
-    display: block;
-  }
-  .containerInner {
-    display: block;
-    padding: 10px;
-  }
-  .containerInnerLeft {
-    height: fit-content;
-  }
-  .buttonDiv {
-    display: block;
-  }
-  .buttonDiv2 {
-    margin-top: 20px;
-    width: fit-content;
-  }
-  .faqCardDiv {
-    margin-top: 40px;
-  }
-  .faqCard {
-    width: 100%;
-  }
-  .title {
-    font-size: 16px;
+    padding: 80px 20px;
   }
 }

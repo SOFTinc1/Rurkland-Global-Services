@@ -52,8 +52,8 @@
 .FaqDetails {
   margin-top: 10px;
   border-radius: 20px;
-  padding: 20px;
-  border: 1px solid #CBD5E1;
+  /* padding: 20px; */
+  /* border: 1px solid #CBD5E1; */
   font-size: 16px;
   line-height: 24px;
   color: #3d3d3d;
@@ -79,6 +79,7 @@ details[open] .icon {
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .container {
     margin-top: -40px;
+    padding: 80px;
   }
   .borderDiv {
     display: none;
@@ -104,7 +105,11 @@ details[open] .icon {
 }
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .container {
-    margin-top: -60px;
+    margin-top: -40px;
+    padding: 80px;
+  }
+  .banner_h4 {
+    margin: 16px 0 0 0;
   }
   .borderDiv {
     display: none;
@@ -120,7 +125,6 @@ details[open] .icon {
     height: fit-content;
   }
   .faqCardDiv {
-    /* height: 400px; */
     overflow-y: hidden;
   }
   .faqCardDivScroll {
@@ -135,6 +139,9 @@ details[open] .icon {
 @media screen and (max-width: 600px) {
   .container {
     padding: 40px 20px;
+  }
+   .banner_h4 {
+    margin: 16px 0 0 0;
   }
   .topUpper {
     display: block;

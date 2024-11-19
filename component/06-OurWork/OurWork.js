@@ -55,7 +55,7 @@
 
 // export default OurWork;
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './OurWork.module.css';
 import Image from "next/image";
 
@@ -66,6 +66,7 @@ import RightArrow from "../../public/icon/right-arrow.svg";
 const Carousel = () => {
   // State to keep track of the current slide index
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsPerView, setItemsPerView] = useState(3); // State to track items per view
 
   // Example data (replace with your dynamic data)
   const data = [
@@ -77,9 +78,23 @@ const Carousel = () => {
     { image: ProjectImg, title: 'Project 6' },
   ];
 
+  // Update itemsPerView based on screen size
+  useEffect(() => {
+    const updateItemsPerView = () => {
+      if (window.innerWidth <= 600) {
+        setItemsPerView(1); // 1 item per view on mobile screens
+      } else {
+        setItemsPerView(3); // 3 items per view on larger screens
+      }
+    };
 
-  // Number of items to show per view
-  const itemsPerView = 3;
+    updateItemsPerView(); // Initial check
+    window.addEventListener('resize', updateItemsPerView); // Listen for screen size changes
+
+    return () => {
+      window.removeEventListener('resize', updateItemsPerView); // Cleanup listener on unmount
+    };
+  }, []);
 
   // Calculate maximum index based on the total number of items
   const maxIndex = Math.max(0, Math.ceil(data.length / itemsPerView) - 1);
@@ -95,17 +110,12 @@ const Carousel = () => {
 
   return (
     <div className={styles.carouselContainer}>
-
       <div className={styles.partners_header}>
         <p className={styles.partners_par}>Lorem Ipsum</p>
         <h4 className={styles.banner_h4}>Our Work</h4>
       </div>
 
       <div className={styles.carouselContainerInner}>
-        <button className={`${styles.navButton} ${styles.navButtonLeft}`} onClick={goPrev}>
-          <Image src={LeftArrow} className={styles.arrow_img} />
-        </button>
-
         <div className={styles.carousel}>
           {data
             .slice(currentIndex * itemsPerView, currentIndex * itemsPerView + itemsPerView)
@@ -120,10 +130,14 @@ const Carousel = () => {
               </div>
             ))}
         </div>
-
-        <button className={`${styles.navButton} ${styles.navButtonRight}`} onClick={goNext}>
-        <Image src={RightArrow} className={styles.arrow_img} />
-        </button>
+        <div className={styles.navButtonDiv}>
+          <button className={`${styles.navButton} ${styles.navButtonLeft}`} onClick={goPrev}>
+            <Image src={LeftArrow} className={styles.arrow_img} />
+          </button>
+          <button className={`${styles.navButton} ${styles.navButtonRight}`} onClick={goNext}>
+            <Image src={RightArrow} className={styles.arrow_img} />
+          </button>
+        </div>
       </div>
     </div>
   );

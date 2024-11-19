@@ -4,16 +4,16 @@
   color: #fff !important;
 }
 .container_upper {
-  display: flex;
-  /* grid-template-columns: 1fr 1fr;
-  gap: 50px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
 }
-.logo {
+/* .logo {
   width: 500px;
   height: auto;
-}
+} */
 .wedo_P {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 .help_header {

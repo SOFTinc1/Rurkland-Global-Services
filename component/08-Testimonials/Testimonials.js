@@ -1,10 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Testimonials.module.css';
 import Image from "next/image";
 
 import Lola from "../../public/static/lola.png";
-import LeftArrow from "../../public/icon/test-left-arrow.svg";
-import RightArrow from "../../public/icon/test-right-arrow.svg";
 
 const Testimonials = () => {
   // State to keep track of the current slide index
@@ -23,14 +21,15 @@ const Testimonials = () => {
   // Calculate maximum index based on the total number of items
   const maxIndex = Math.max(0, Math.ceil(data.length / itemsPerView) - 1);
 
-  // Navigation Handlers
-  const goNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === maxIndex ? 0 : prevIndex + 1));
-  };
+  // Automatically go to the next slide every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex === maxIndex ? 0 : prevIndex + 1));
+    }, 5000); // 5000ms = 5 seconds
 
-  const goPrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? maxIndex : prevIndex - 1));
-  };
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
+  }, [maxIndex]);
 
   return (
     <div className={styles.carouselContainer}>
@@ -41,32 +40,23 @@ const Testimonials = () => {
       </div>
 
       <div className={styles.carouselContainerInner}>
-        <button className={`${styles.navButton} ${styles.navButtonLeft}`} onClick={goPrev}>
-          <Image src={LeftArrow} className={styles.arrow_img} alt="Previous" />
-        </button>
-
-        <div className={styles.carousel}>
-          {data
-            .slice(currentIndex * itemsPerView, currentIndex * itemsPerView + itemsPerView)
-            .map((item, index) => (
-              <div key={index} className={styles.carouselItem}>
-                <div className={styles.imageWrapper}>
-                  {/* Title at the top */}
-                  <p className={styles.imageText}>{item.title}</p>
-                  {/* Image below the title */}
-                  <Image src={item.image} alt={item.title} className={styles.carouselImage} />
-                  <h2 className={styles.imageText2}>{item.fullname}</h2>
-                </div>
+        <div className={styles.carousel} style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {data.map((item, index) => (
+            <div key={index} className={styles.carouselItem}>
+              <div className={styles.imageWrapper}>
+                <p className={styles.imageText}>{item.title}</p>
+                <Image src={item.image} alt={item.title} className={styles.carouselImage} />
+                <h2 className={styles.imageText2}>{item.fullname}</h2>
               </div>
-            ))}
+            </div>
+          ))}
         </div>
-
-        <button className={`${styles.navButton} ${styles.navButtonRight}`} onClick={goNext}>
-          <Image src={RightArrow} className={styles.arrow_img} alt="Next" />
-        </button>
       </div>
     </div>
   );
 };
 
 export default Testimonials;
+
+
+

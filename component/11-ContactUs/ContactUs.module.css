@@ -60,39 +60,25 @@
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
   .container {
-    padding: 80px 80px 20px 80px;
-    position: relative;
+    padding: 80px;
   }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
   .container {
-    padding: 80px 40px 20px 40px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .container {
-    padding: 40px 15px 20px 15px;
-    position: relative;
-    margin-top: -1px;
-  }
-}
-
-@media only screen and (max-width: 1270px) and (min-width: 1024px) {
-  .container {
-    padding: 120px 40px 160px 40px;
-  }
-}
-
-@media only screen and (max-width: 1023px) and (min-width: 600px) {
-  .container {
-    padding: 120px 40px 160px 40px;
+    padding: 80px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .container {
     padding: 80px 20px;
+  }
+  .container_inner {
+    display: block;
+  }
+  .form_div {
+    padding: 0;
+    margin-top: -20px;
   }
 }

@@ -11,11 +11,13 @@
 .banner_par {
   font-size: 18px;
   color: #fff;
+  text-align: center;
 }
 .banner_h1 {
   font-size: 64px;
   color: #fff;
   padding: 16px 0px 48px 0;
+  text-align: center;
 }
 
 /* Mobile styles */
