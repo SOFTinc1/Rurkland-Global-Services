@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./WorkProcess.module.css";
 
-import OilAndGas from "../../public/icon/purse.svg";
+import OilAndGas from "../../public/icon/Purse.svg";
 import Refining from "../../public/icon/Lab.svg";
 import Truck from "../../public/icon/Rocket.svg";
 import Truck2 from "../../public/icon/CR.svg";
