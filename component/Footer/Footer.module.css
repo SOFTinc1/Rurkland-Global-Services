@@ -39,7 +39,29 @@
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
+  .container {
+    padding: 80px 80px 30px 80px;
+  }
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 600px) {
+  .container {
+    padding: 80px 80px 30px 80px;
+  }
+  .container_upper {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 80px 20px 30px 20px;
+  }
+  .container_upper {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+    height: auto;
+  }
 }

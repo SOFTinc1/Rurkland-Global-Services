@@ -1,3 +1,4 @@
+"use client"
 import React, { Component } from "react";
 import styles from "./ContactUs.module.css";
 import Button from "../Button/Button";

@@ -69,7 +69,7 @@
   display: flex;
   gap: 30px;
   justify-content: center;
-  padding: 24px;
+  padding: 24px 0;
   background: #E7DCFD;
 }
 .help_header {

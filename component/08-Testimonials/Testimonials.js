@@ -3,6 +3,7 @@ import styles from './Testimonials.module.css';
 import Image from "next/image";
 
 import Lola from "../../public/static/lola.png";
+import Straight from "../../public/icon/Straight.svg";
 
 const Testimonials = () => {
   // State to keep track of the current slide index
@@ -37,6 +38,7 @@ const Testimonials = () => {
       <div className={styles.partners_header}>
         <p className={styles.partners_par}>TESTIMONIALS</p>
         <h4 className={styles.banner_h4}>Hear What Our Customers <br /> Say</h4>
+        <Image src={Straight} alt="" className={styles.spiral_img} />
       </div>
 
       <div className={styles.carouselContainerInner}>
