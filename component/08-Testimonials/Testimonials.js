@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from './Testimonials.module.css';
 import Image from "next/image";
 
-import Lola from "../../public/static/lola.PNG";
+import Lola from "../../public/static/lola.png";
 import LeftArrow from "../../public/icon/test-left-arrow.svg";
 import RightArrow from "../../public/icon/test-right-arrow.svg";
 

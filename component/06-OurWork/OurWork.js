@@ -59,7 +59,7 @@ import { useState } from 'react';
 import styles from './OurWork.module.css';
 import Image from "next/image";
 
-import ProjectImg from "../../public/static/project.PNG";
+import ProjectImg from "../../public/static/project.png";
 import LeftArrow from "../../public/icon/left-arrow.svg";
 import RightArrow from "../../public/icon/right-arrow.svg";
 
