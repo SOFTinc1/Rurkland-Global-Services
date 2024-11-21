@@ -29,7 +29,7 @@ const Footer = () => {
 
           <div className={styles.help_header}>
             <Image src={SMS} className={styles.help_header_icon} />
-            <span className={styles.help_header_title}>info@rurklandglobal.com</span>
+            <span className={styles.help_header_title}>admin@rurkland.com</span>
           </div>
         </div>
       </div>

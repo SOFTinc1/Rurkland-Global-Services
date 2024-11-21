@@ -68,14 +68,14 @@
 .dotsContainer {
   display: flex;
   justify-content: center;
-  margin-top: 20px; /* Adjust the spacing between the carousel and the dots */
+  margin-top: 40px; /* Adjust the spacing between the carousel and the dots */
   position: absolute;
   bottom: 0;
   margin-bottom: 60px;
 }
 .dot {
-  height: 12px;
-  width: 12px;
+  height: 20px;
+  width: 20px;
   background-color: #A4A4A4;
   border-radius: 50%;
   margin: 0 5px;
