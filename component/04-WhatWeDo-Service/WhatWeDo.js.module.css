@@ -41,11 +41,26 @@
 }
 .wedo_h2 {
   margin: 32px 0 16px 0;
+  text-transform: uppercase;
 }
 .wedo_P {
   font-size: 16px;
   font-weight: 400;
   color: #7A7A7A;
+}
+.col3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 155px;
+}
+.card2 {
+  border: 1px solid #EBEBEB;
+  padding: 24px;
+  border-radius: 16px;
+  height: 450px;
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {
@@ -64,6 +79,11 @@
     grid-template-columns: 1fr 1fr;
     gap: 40px;
   }
+  .col3 {
+    padding: 0;
+    justify-content: start;
+  align-items: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -75,10 +95,18 @@
     margin-bottom: 0;
   }
   .card {
-    margin-bottom: 40px;
+    margin-top: 40px;
   }
   .spiral_img {
     width: 70px;
     height: 70px;
+  }
+  .col3 {
+    display: block;
+    padding: 0;
+  }
+  .card2 {
+    height: auto;
+    margin-top: 40px;
   }
 }

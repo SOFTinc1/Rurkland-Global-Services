@@ -13,13 +13,13 @@ const Footer = () => {
       <div className={styles.container_upper}>
         <div className={styles.col1}>
           <Image src={Logo} className={styles.logo} />
-          <p className={styles.wedo_P}>Drive sustainable progress while uplifting communities and protecting the environment.</p>
+          <p className={styles.wedo_P}>Excellence in Every Drop, Progress in Every Partnership and Powering a Sustainable Future.</p>
         </div>
         <div className={styles.col2}>
 
           <div className={styles.help_header}>
             <Image src={Location} className={styles.help_header_icon} />
-            <span className={styles.help_header_title}>2B Olawale Onitiri Cole Street Off Admiralty Road Lekki Phase 1</span>
+            <span className={styles.help_header_title}>Plot 93, Ray Agwulonu Avenue, Choos Estate, Wumba District, Abuja FCT, Nigeria</span>
           </div>
 
           <div className={styles.help_header}>
@@ -29,7 +29,7 @@ const Footer = () => {
 
           <div className={styles.help_header}>
             <Image src={SMS} className={styles.help_header_icon} />
-            <span className={styles.help_header_title}>info@rurklandglobalcom</span>
+            <span className={styles.help_header_title}>info@rurklandglobal.com</span>
           </div>
         </div>
       </div>

@@ -55,7 +55,9 @@
   font-family: sfpro-reg;
 }
 .button_div {
-  margin: 20px 0 0 auto;
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 1270px) and (min-width: 1024px) {

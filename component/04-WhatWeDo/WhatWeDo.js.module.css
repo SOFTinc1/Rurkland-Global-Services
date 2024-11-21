@@ -40,6 +40,7 @@
 }
 .wedo_h2 {
   margin: 32px 0 16px 0;
+  text-transform: uppercase;
 }
 .wedo_P {
   font-size: 16px;

@@ -3,8 +3,8 @@ import Image from "next/image";
 import styles from "./WorkProcess.module.css";
 
 import Headphone from "../../public/icon/headphone.svg";
-import Screw from "../../public/icon/screw.svg";
-import Purse from "../../public/icon/Purse.svg";
+import Sheild from "../../public/icon/shield.svg";
+import Globe from "../../public/icon/globe.svg";
 
 // import Button from "../Button/Button";
 
@@ -23,13 +23,13 @@ const WorkProcessServices = () => {
         </div>
 
         <div className={styles.card}>
-          <Image src={Screw} alt="" className={styles.project_img} />
-          <h1 className={styles.wedo_h1}>Maintenance</h1> 
+          <Image src={Sheild} alt="" className={styles.project_img} />
+          <h1 className={styles.wedo_h1}>Quality Assurance</h1> 
         </div>
 
         <div className={styles.card}>
-          <Image src={Purse} alt="" className={styles.project_img} />
-          <h1 className={styles.wedo_h1}>Full Services</h1> 
+          <Image src={Globe} alt="" className={styles.project_img} />
+          <h1 className={styles.wedo_h1}>Sustainability</h1> 
         </div>
 
       </div>

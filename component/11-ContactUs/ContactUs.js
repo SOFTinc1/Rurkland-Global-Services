@@ -12,7 +12,7 @@ class ContactUs extends Component {
         <div className={styles.div_one}>
           <p className={styles.partners_par}>QUESTIONS FROM YOU TO US</p>
           <h4 className={styles.banner_h4}>Get A Quote</h4>
-          <p className={styles.banner_P}>As fellow entrepreneurs, we understand the need for solutions that allow your business to thrive. Get in touch today to discuss your project needs, and let us provide you with a custom solution that supports your growth.</p>
+          <p className={styles.banner_P}>Looking for reliable, tailored energy solutions? At Rurkland, we offer customized quotes for petroleum products, marine fuels, and distribution services. Our team is ready to provide you with competitive pricing and top-quality service. Simply fill out the form below, and we’ll get back to you with a no-obligation quote. Let’s power your business with the best in the industry.</p>
         </div>
         <div className={styles.form_div}>
           <form onSubmit={this.handleSubmit} className={styles.form_card}>

@@ -40,7 +40,7 @@
 }
 .card {
   border: 1px solid #EBEBEB;
-  padding: 24px;
+  padding: 40px;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -87,5 +87,7 @@
   }
   .card {
     margin-top: 40px;
+    /* padding: 0; */
+    width: 300px;
   }
 }

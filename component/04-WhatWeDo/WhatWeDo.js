@@ -3,9 +3,9 @@ import Image from "next/image";
 import styles from "./WhatWeDo.js.module.css";
 import Link from "next/link";
 
-import OilAndGas from "../../public/icon/oilandgas.svg";
+import OilAndGas from "../../public/icon/petrol.svg";
+import Truck from "../../public/icon/marine.svg";
 import Refining from "../../public/icon/refining.svg";
-import Truck from "../../public/icon/truck.svg";
 import Spiral from "../../public/icon/spiral.svg";
 import Button from "../Button/Button";
 
@@ -23,20 +23,20 @@ const WhatWeDo = () => {
 
         <div className={styles.card}>
           <Image src={OilAndGas} alt="" className={styles.project_img} />
-          <h2 className={styles.wedo_h2}>OIL & GAS EXPLORATION</h2>
-          <p className={styles.wedo_P}>Our Exploration & Production (E&P) services focus on identifying, assessing, and extracting natural resources with precision and care. Utilizing advanced seismic technology, geological analysis, and risk management techniques, we ensure that each exploration project is both efficient and sustainable.</p>
-        </div>
-
-        <div className={styles.card}>
-          <Image src={Refining} alt="" className={styles.project_img} />
-          <h2 className={styles.wedo_h2}>REFINING & PROCESSING</h2>
-          <p className={styles.wedo_P}>Our refining and processing operations take raw materials from the wellhead to the market, ensuring high-quality output that meets rigorous industry standards. With state-of-the-art processing facilities and an unwavering commitment to safety, we efficiently transform crude oil and natural gas into valuable products.</p>
+          <h2 className={styles.wedo_h2}>Delivery of Petroleum Products</h2>
+          <p className={styles.wedo_P}>At Rurkland, we ensure seamless sourcing and delivery of premium petroleum products from leading refineries across Nigeria. Our global reach and robust logistics network enable us to provide clients with timely and reliable energy solutions, tailored to their specific needs. Whether it's Fuel Oil, Gasoline, or LNG, we deliver excellence every step of the way.</p>
         </div>
 
         <div className={styles.card}>
           <Image src={Truck} alt="" className={styles.project_img} />
-          <h2 className={styles.wedo_h2}>TRANSPORTATION & DISTRIBUTION</h2>
-          <p className={styles.wedo_P}>Efficient, safe, and reliable logistics are essential to delivering our products and services. Our logistics and distribution network spans across Nigeria and beyond, utilizing advanced infrastructure and technology to ensure the timely and secure movement of oil and gas products.</p>
+          <h2 className={styles.wedo_h2}>Supply of Marine Fuels</h2>
+          <p className={styles.wedo_P}>Rurkland specializes in providing high-quality marine fuels, including Very Low Sulphur Fuel Oil (VLSFO) and Low Sulphur Marine Gas Oil (LSMGO). With a focus on compliance and performance, our fuels ensure optimal efficiency for vessels while meeting international environmental standards. Trust us to power your maritime operations responsibly.</p>
+        </div>
+
+        <div className={styles.card}>
+          <Image src={Refining} alt="" className={styles.project_img} />
+          <h2 className={styles.wedo_h2}>Bunker Fuel Distribution</h2>
+          <p className={styles.wedo_P}>We are your trusted partner for bunker fuel distribution, ensuring vessels are supplied at essential ports and strategic coastal sites across Nigeria. Our reliable network and superior product quality keep your operations on course, offering unmatched service in the dynamic maritime industry.</p>
         </div>
 
       </div>
