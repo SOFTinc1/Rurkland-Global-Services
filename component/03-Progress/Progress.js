@@ -6,7 +6,7 @@ import Man from "../../public/static/man.png";
 
 const ProgressService = () => {
   return (
-    <div className={styles.container}>
+    <div id="progress" className={styles.container}>
       <div className={styles.col1}>
         <p className={styles.partners_par}>OUR STORY</p>
         <h4 className={styles.banner_h4}>About Us</h4>

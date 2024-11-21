@@ -29,7 +29,7 @@ const Difference = () => {
           <h4 className={styles.banner_h2}>Sustainability</h4>
         </div>
 
-        <Link href="#partner">
+        <Link href="/services">
           <p className={styles.difference_par2}>View Services</p>
         </Link>
       </div>
